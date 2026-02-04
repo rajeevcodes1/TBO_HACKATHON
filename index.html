@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TBO Moments | Multi-Purpose Bookings</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">TBO Moments</div>
+        <div class="nav-links">
+          <a href="#flow">Journey</a>
+          <a href="#vendors">Vendors</a>
+          <a href="#faq">Support</a>
+        </div>
+        <button class="ghost-button">Book a demo</button>
+      </nav>
+      <div class="hero-content">
+        <div>
+          <p class="eyebrow">Gentle planning for extraordinary gatherings</p>
+          <h1>Design, compare, and book the perfect experience for every event.</h1>
+          <p class="hero-copy">
+            From MICE conferences to dreamy destination weddings, capture preferences in minutes and let our
+            recommendation engine surface the top-rated vendors that match your vision.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" type="button" id="startFlow">Start planning</button>
+            <button class="secondary-button" type="button">View sample itineraries</button>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h3>10+</h3>
+              <p>Vendor categories</p>
+            </div>
+            <div>
+              <h3>48 hrs</h3>
+              <p>Estimated itinerary turnaround</p>
+            </div>
+            <div>
+              <h3>5-star</h3>
+              <p>Curated partner rating</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Your booking concierge</h2>
+          <p>Tell us the story, and we will craft a vendor lineup aligned to your needs.</p>
+          <ul>
+            <li>Event type & destination</li>
+            <li>Guest size and dates</li>
+            <li>Customization & budget cues</li>
+            <li>Compare up to 10 vendors per category</li>
+          </ul>
+          <button class="primary-button" type="button">Save my spot</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="flow" class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Step-by-step planning flow</p>
+            <h2>Build a complete booking brief in three gentle steps.</h2>
+          </div>
+          <div class="panel-pill">Smart recommendations powered by ratings + fit</div>
+        </div>
+        <div class="flow-grid">
+          <form class="flow-form" id="bookingForm">
+            <div class="form-section">
+              <h3>1. Select your event type</h3>
+              <div class="chip-grid">
+                <label class="chip">
+                  <input type="radio" name="eventType" value="MICE" checked />
+                  <span>MICE (Meetings, Incentives, Conferences, Exhibitions)</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="eventType" value="Destination Wedding" />
+                  <span>Destination Wedding</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="eventType" value="Corporate Retreat" />
+                  <span>Corporate Retreat</span>
+                </label>
+                <label class="chip">
+                  <input type="radio" name="eventType" value="Luxury Celebration" />
+                  <span>Luxury Celebration</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>2. Share the essentials</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="location">Location preference</label>
+                  <input id="location" name="location" placeholder="Goa, Bali, Dubai..." />
+                </div>
+                <div class="field">
+                  <label for="date">Date range</label>
+                  <input id="date" name="date" placeholder="Oct 2025 - Nov 2025" />
+                </div>
+                <div class="field">
+                  <label for="destination">Wedding destination</label>
+                  <input id="destination" name="destination" placeholder="Udaipur, Santorini..." />
+                </div>
+                <div class="field">
+                  <label for="guests">Estimated guest range</label>
+                  <select id="guests" name="guests">
+                    <option>50 - 150 guests</option>
+                    <option>150 - 300 guests</option>
+                    <option>300 - 600 guests</option>
+                    <option>600+ guests</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h3>3. Customization expectations</h3>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="customization">Degree of customization</label>
+                  <select id="customization" name="customization">
+                    <option>Essential (guided by vendor templates)</option>
+                    <option>Signature (moderate personalization)</option>
+                    <option>High-touch (bespoke, concierge-led)</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="budget">Budget range</label>
+                  <select id="budget" name="budget">
+                    <option>Flexible / Not sure yet</option>
+                    <option>₹25L - ₹50L</option>
+                    <option>₹50L - ₹1Cr</option>
+                    <option>₹1Cr+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <button class="primary-button" type="submit">Get recommendations</button>
+          </form>
+
+          <div class="flow-summary">
+            <h3>How it works</h3>
+            <ol>
+              <li>Capture preferences and logistics in minutes.</li>
+              <li>Our engine ranks vendors by rating, fit, and availability signals.</li>
+              <li>Select up to 10 vendors per section to request itineraries.</li>
+              <li>TBO relays details and returns a curated dashboard within hours.</li>
+            </ol>
+            <div class="summary-card">
+              <p class="eyebrow">Live status</p>
+              <h4>Vendor outreach within 15 minutes</h4>
+              <p>
+                As soon as you confirm your shortlist, the TBO team contacts vendors for availability,
+                budget quotes, and detailed itineraries.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="vendors" class="panel vendors-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Top vendor recommendations</p>
+            <h2>Choose up to 10 vendors to receive itineraries & availability.</h2>
+          </div>
+          <div class="panel-pill">Selection limit: 10 vendors per category</div>
+        </div>
+
+        <div class="vendor-controls">
+          <div>
+            <h3>Recommendations</h3>
+            <p>Based on your inputs, we surface vendors with the highest ratings and relevance.</p>
+          </div>
+          <div class="selection-status">
+            <span id="selectedCount">0</span>
+            <span>/10 selected</span>
+          </div>
+        </div>
+
+        <div class="vendor-grid" id="vendorGrid"></div>
+
+        <div class="vendor-footer">
+          <div>
+            <h4>Next step: concierge outreach</h4>
+            <p>We will contact your selected vendors and share detailed itineraries on your dashboard.</p>
+          </div>
+          <button class="primary-button" type="button">Request itineraries</button>
+        </div>
+      </section>
+
+      <section id="faq" class="panel support-panel">
+        <div class="panel-header">
+          <div>
+            <p class="eyebrow">Gentle assistance</p>
+            <h2>Everything you need for a smooth booking experience.</h2>
+          </div>
+        </div>
+        <div class="support-grid">
+          <div class="support-card">
+            <h3>Vendor matching</h3>
+            <p>We balance ratings, capacity, and style to align with your event objectives.</p>
+          </div>
+          <div class="support-card">
+            <h3>Shortlist control</h3>
+            <p>Select up to 10 vendors per category so you remain in full control of outreach.</p>
+          </div>
+          <div class="support-card">
+            <h3>Dashboard updates</h3>
+            <p>All itineraries, budgets, and availability return to your personalized dashboard.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h4>TBO Moments</h4>
+        <p>Design meaningful events with confident vendor selections.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#flow">Planning flow</a>
+        <a href="#vendors">Vendor list</a>
+        <a href="#faq">FAQ</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
